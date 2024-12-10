@@ -2,21 +2,22 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: #f4f4f4;
 }
 
 header {
     background-color: #28a745;
-    color: #fff;
-    text-align: center;
+    color: white;
     padding: 1em;
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
+    padding: 0;
     display: flex;
     justify-content: center;
-    padding: 0;
+    background-color: #333;
 }
 
 nav ul li {
@@ -24,34 +25,81 @@ nav ul li {
 }
 
 nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #fff;
 }
 
-.categories, .products {
+.categories {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.category-links a {
+    display: inline-block;
+    margin: 1em;
+    padding: 1em 2em;
+    text-decoration: none;
+    color: #28a745;
+    border: 1px solid #28a745;
+    border-radius: 5px;
+}
+
+.category-links a:hover {
+    background-color: #28a745;
+    color: white;
+}
+
+.products {
     display: flex;
-    justify-content: space-around;
+    gap: 1em;
+    justify-content: center;
     flex-wrap: wrap;
-    margin: 1em auto;
-    max-width: 800px;
 }
 
 .product {
-    border: 1px solid #ddd;
-    padding: 1em;
-    margin: 0.5em;
     text-align: center;
-    background: #fff;
+    background-color: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
 }
 
 .product img {
-    max-width: 100px;
-    margin-bottom: 1em;
+    max-width: 100%;
+    height: auto;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin: 0.5em 0 0.2em;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    margin-top: 1em;
+    padding: 0.5em;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 footer {
+    background-color: #333;
+    color: white;
     text-align: center;
-    background: #28a745;
-    color: #fff;
     padding: 1em;
 }
